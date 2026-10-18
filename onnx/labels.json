@@ -1,0 +1,18 @@
+{
+  "id2intent": {
+    "0": "zip_lookup",
+    "1": "top_regions",
+    "2": "category_top_regions",
+    "3": "explain_clusters",
+    "4": "help_greeting",
+    "5": "out_of_scope"
+  },
+  "intent2id": {
+    "zip_lookup": 0,
+    "top_regions": 1,
+    "category_top_regions": 2,
+    "explain_clusters": 3,
+    "help_greeting": 4,
+    "out_of_scope": 5
+  }
+}

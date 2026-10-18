@@ -1,0 +1,20 @@
+name: StoreScout Render Free Instance Keep-Alive
+
+on:
+  schedule:
+    # Run every 10 minutes to prevent Render free instance hibernation
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Streamlit Health Endpoint
+        run: |
+          if [ -z "${{ vars.APP_URL }}" ]; then
+            echo "APP_URL repository variable is not set. Skipping keep-alive ping gracefully."
+            exit 0
+          fi
+          echo "Pinging Health Endpoint: ${{ vars.APP_URL }}/_stcore/health"
+          curl -fsS --retry 3 --retry-delay 5 --max-time 60 "${{ vars.APP_URL }}/_stcore/health" || echo "Ping failed or server waking up."

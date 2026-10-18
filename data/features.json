@@ -1,0 +1,7 @@
+[
+  "customer_density_log",
+  "total_revenue_log",
+  "avg_order_value_log",
+  "order_frequency",
+  "avg_delivery_days"
+]

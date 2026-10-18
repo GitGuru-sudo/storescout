@@ -1,0 +1,22 @@
+{
+  "0": {
+    "name": "High-Velocity Metro Hubs",
+    "recommendation": "Open flagship retail experience stores and 1-hour micro-fulfillment dark stores.",
+    "strategy": "Flagship Retail & Express Hub"
+  },
+  "1": {
+    "name": "Affluent Suburban & Secondary Hubs",
+    "recommendation": "Expand high-margin premium catalog and launch omni-channel click-and-collect outlets.",
+    "strategy": "Omni-Channel Store & Premium Assortment"
+  },
+  "2": {
+    "name": "High-Demand Fulfillment Bottlenecks",
+    "recommendation": "TOP PRIORITY: Open Regional Fulfillment Center to reduce delivery times from 25 days to 2 days.",
+    "strategy": "Urgent Dark Store Fulfillment Center"
+  },
+  "3": {
+    "name": "Distant Long-Tail Sparse Zones",
+    "recommendation": "Optimize 3PL postal contracts. Avoid physical store capital expenditure.",
+    "strategy": "3PL Logistics Optimization"
+  }
+}
