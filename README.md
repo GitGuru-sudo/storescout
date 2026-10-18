@@ -1,7 +1,7 @@
 # StoreScout
 > AI-driven geographic market intelligence and store location recommendation platform for Brazilian quick-commerce and retail expansion.
 
-**Live Demo URL:** [https://storescout.onrender.com](https://storescout.onrender.com) *(Placeholder: update if a custom domain or alternate suffix is assigned upon Render deployment)*
+**Live Demo URL:** [https://storescout.onrender.com](https://storescout-tn9y.onrender.com/) *(Placeholder: update if a custom domain or alternate suffix is assigned upon Render deployment)*
 
 ## How It Works
 ```text
