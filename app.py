@@ -295,7 +295,7 @@ with st.sidebar:
             geo_df, tool_ans = category_top_regions(sel_cat, max_delivery_days=sel_days, n=sel_n)
             st.write(tool_ans)
             if geo_df is not None and not geo_df.empty:
-                st.map(geo_df[['lat', 'lng']])
+                st.map(geo_df[['lat', 'lng']].rename(columns={'lng': 'lon'}))
 
 # Multi-turn conversation state
 if "messages" not in st.session_state:
@@ -310,7 +310,7 @@ for msg in st.session_state["messages"]:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
         if "map_data" in msg and msg["map_data"] is not None:
-            st.map(msg["map_data"][['lat', 'lng']])
+            st.map(msg["map_data"][['lat', 'lng']].rename(columns={'lng': 'lon'}))
 
 # Chat Input & Orchestration Loop
 user_input = st.chat_input("Enter your retail inquiry (English / Hinglish)...")
@@ -383,7 +383,7 @@ if user_input:
     with st.chat_message("assistant"):
         st.markdown(bot_response)
         if map_data is not None and not map_data.empty:
-            st.map(map_data[['lat', 'lng']])
+            st.map(map_data[['lat', 'lng']].rename(columns={'lng': 'lon'}))
             
     st.session_state["messages"].append({
         "role": "assistant", 
